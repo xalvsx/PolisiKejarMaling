@@ -13,6 +13,11 @@ public class Jalanan extends Actor
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     private int speed = 2;
+    private int active = 0;
+    
+    public void setActive() {
+        active = 1;
+    }
     
     public Jalanan(int i) {
         Game game = (Game)getWorld();
@@ -27,9 +32,11 @@ public class Jalanan extends Actor
     {
         // Add your action code here.
         //System.out.println(this.getY());
-        this.setLocation(this.getX(), this.getY() + speed);
-        if(this.isAtEdge()) {
-            this.setLocation(this.getX(), 0);
+        if(active==1) {
+            this.setLocation(this.getX(), this.getY() + speed);
+            if(this.isAtEdge()) {
+                this.setLocation(this.getX(), 0);
+            }
         }
     }    
 }
