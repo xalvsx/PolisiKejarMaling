@@ -37,5 +37,9 @@ public class Game extends World
         Polisi polisi = new Polisi();
         addObject(polisi, 408, 558);
         polisi.setLocation(355, 554);
+        Maling maling = new Maling();
+        addObject(maling, 355, 113);
+        maling.setLocation(398, 58);
+        polisi.setLocation(401, 555);
     }
 }
