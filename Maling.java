@@ -12,6 +12,18 @@ public class Maling extends Actor
      * Act - do whatever the Maling wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+    private int character = 0;
+    
+    public Maling(int i) {
+        character = i;
+        if(i==1) {
+            setImage("MobilMaling.png");
+        }
+        else if(i==2) {
+            setImage("MotorMaling.png");
+        }
+    }
+    
     private int counter = 0;
     private int counter2 = 0;
     private int arah = 50;
@@ -20,15 +32,18 @@ public class Maling extends Actor
     
     public void act() 
     {
-        counter++;
+        if(character==0) {
+            counter++;
+            if(counter==8) {
+                setImage("mal2.png");
+            }
+            else if(counter==16) {
+                setImage("mal3.png");
+                counter=0;
+            }
+        }
+        
         counter2++;
-        if(counter==8) {
-            setImage("mal2.png");
-        }
-        else if(counter==16) {
-            setImage("mal3.png");
-            counter=0;
-        }
         
         if(getX()<260) {
             setLocation(getX()+2,getY());

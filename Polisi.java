@@ -12,24 +12,38 @@ public class Polisi extends Actor
      * Act - do whatever the Polisi wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+    private int character = 0;
+    public Polisi(int i) {
+        character = i;
+        
+        if(i==1) {
+            setImage("carpol1.png");
+        }
+        else if(i==2) {
+            setImage("motorpol.png");
+        }
+    }
+    
     private int counter = 0;
     private int flagbelokkiri = 0;
     private int flagbelokkanan = 0;
     public void act() 
     {
-        counter++;
-        if(counter==8) {
-            setImage("pol2.png");
-        }
-        else if(counter==16) {
-            setImage("pol3.png");
-            counter=0;
+        if(character==0) {
+            counter++;
+            if(counter==8) {
+                setImage("pol2.png");
+            }
+            else if(counter==16) {
+                setImage("pol3.png");
+                counter=0;
+            }
         }
         
-        if(getX()<250) {
+        if(getX()<260) {
             setLocation(getX()+2,getY());
         }
-        else if(getX()>550) {
+        else if(getX()>545) {
             setLocation(getX()-2,getY());
         }
         
