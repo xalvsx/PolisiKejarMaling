@@ -34,9 +34,9 @@ public class Game extends World
      */
     private void prepare()
     {
-        addObject(new Jalanan(),400,300);
-        addObject(new Jalanan(),400,0);
-        addObject(new Jalanan(),400,600);
+        addObject(new Jalanan(character),400,300);
+        addObject(new Jalanan(character),400,0);
+        addObject(new Jalanan(character),400,600);
         Polisi polisi = new Polisi(character);
         addObject(polisi, 408, 558);
         polisi.setLocation(355, 554);

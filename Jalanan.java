@@ -14,12 +14,13 @@ public class Jalanan extends Actor
      */
     private int speed = 2;
     
-    public Jalanan() {
+    public Jalanan(int i) {
         Game game = (Game)getWorld();
-        /*
-        if(game.getCharacterMode()==1) {
+        
+        if(i==1) {
             speed = 4;
-        }*/
+        }
+        else if(i==2) speed = 6;
     }
     
     public void act() 

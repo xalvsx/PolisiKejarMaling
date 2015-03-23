@@ -27,11 +27,11 @@ public class MenuUtama extends World
      */
     private void prepare()
     {
-        Jalanan jalanan = new Jalanan();
+        Jalanan jalanan = new Jalanan(0);
         addObject(jalanan, 660, 296);
-        Jalanan jalanan2 = new Jalanan();
+        Jalanan jalanan2 = new Jalanan(0);
         addObject(jalanan2, 344, 179);
-        Jalanan jalanan3 = new Jalanan();
+        Jalanan jalanan3 = new Jalanan(0);
         addObject(jalanan3, 448, 528);
         jalanan.setLocation(619, 314);
         jalanan2.setLocation(199, 270);

@@ -17,10 +17,10 @@ public class Maling extends Actor
     public Maling(int i) {
         character = i;
         if(i==1) {
-            setImage("MobilMaling.png");
+            setImage("MotorMaling.png");
         }
         else if(i==2) {
-            setImage("MotorMaling.png");
+            setImage("MobilMaling.png");
         }
     }
     
