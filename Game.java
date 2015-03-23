@@ -6,14 +6,14 @@ import greenfoot.*;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class mainGame extends World
+public class Game extends World
 {
 
     /**
      * Constructor for objects of class mainGame.
      * 
      */
-    public mainGame()
+    public Game()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(800, 600, 1); 
