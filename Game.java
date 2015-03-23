@@ -15,11 +15,27 @@ public class Game extends World
      */
     private int character = 0;
     
+    Jalanan j1,j2,j3;
+    
+    Polisi polisi;
+    Maling maling;
+    
+    public void setActive() {
+        j1.setActive();
+        j2.setActive();
+        j3.setActive();
+        polisi.setActive();
+        maling.setActive();
+    }
+    
     public Game(int i)
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(800, 600, 1); 
         character = i;
+        j1 = new Jalanan(character);
+        j2 = new Jalanan(character);
+        j3 = new Jalanan(character);
         prepare();
     }
     
@@ -34,15 +50,17 @@ public class Game extends World
      */
     private void prepare()
     {
-        addObject(new Jalanan(character),400,300);
-        addObject(new Jalanan(character),400,0);
-        addObject(new Jalanan(character),400,600);
-        Polisi polisi = new Polisi(character);
+        addObject(j1,400,300);
+        addObject(j2,400,0);
+        addObject(j3,400,600);
+        polisi = new Polisi(character);
         addObject(polisi, 408, 558);
         polisi.setLocation(355, 554);
-        Maling maling = new Maling(character);
+        maling = new Maling(character);
         addObject(maling, 355, 113);
         maling.setLocation(398, 58);
         polisi.setLocation(401, 555);
+        Countdown countdown = new Countdown();
+        addObject(countdown, 739, 445);
     }
 }

@@ -23,48 +23,55 @@ public class Polisi extends Actor
             setImage("carpol1.png");
         }
     }
-    
+    private int active = 0;
     private int counter = 0;
     private int flagbelokkiri = 0;
     private int flagbelokkanan = 0;
+    
+    public void setActive() {
+        active = 1;
+    }
+    
     public void act() 
     {
-        if(character==0) {
-            counter++;
-            if(counter==8) {
-                setImage("pol2.png");
+        if(active==1) {
+            if(character==0) {
+                counter++;
+                if(counter==8) {
+                    setImage("pol2.png");
+                }
+                else if(counter==16) {
+                    setImage("pol3.png");
+                    counter=0;
+                }
             }
-            else if(counter==16) {
-                setImage("pol3.png");
-                counter=0;
+            
+            if(getX()<260) {
+                setLocation(getX()+2,getY());
             }
-        }
-        
-        if(getX()<260) {
-            setLocation(getX()+2,getY());
-        }
-        else if(getX()>545) {
-            setLocation(getX()-2,getY());
-        }
-        
-        if(Greenfoot.isKeyDown("left")) {
-            setLocation(getX()-2,getY());
-            if(flagbelokkiri==0) turn(-20);
-            flagbelokkiri=1;
-        }
-        else if(Greenfoot.isKeyDown("right")) {
-            setLocation(getX()+2,getY());
-            if(flagbelokkanan==0) turn(20);
-            flagbelokkanan=1;
-        }
-        else {
-            if(flagbelokkiri==1) {
-                turn(20);
-                flagbelokkiri=0;
+            else if(getX()>545) {
+                setLocation(getX()-2,getY());
             }
-            else if(flagbelokkanan==1) {
-                turn(-20);
-                flagbelokkanan=0;
+            
+            if(Greenfoot.isKeyDown("left")) {
+                setLocation(getX()-2,getY());
+                if(flagbelokkiri==0) turn(-20);
+                flagbelokkiri=1;
+            }
+            else if(Greenfoot.isKeyDown("right")) {
+                setLocation(getX()+2,getY());
+                if(flagbelokkanan==0) turn(20);
+                flagbelokkanan=1;
+            }
+            else {
+                if(flagbelokkiri==1) {
+                    turn(20);
+                    flagbelokkiri=0;
+                }
+                else if(flagbelokkanan==1) {
+                    turn(-20);
+                    flagbelokkanan=0;
+                }
             }
         }
     

@@ -29,51 +29,57 @@ public class Maling extends Actor
     private int arah = 50;
     private int flagbelokkiri = 0;
     private int flagbelokkanan = 0;
+    private int active = 0;
+    
+    public void setActive() {
+        active = 1;
+    }
     
     public void act() 
     {
-        if(character==0) {
-            counter++;
-            if(counter==8) {
-                setImage("mal2.png");
+        if(active==1) {
+            if(character==0) {
+                counter++;
+                if(counter==8) {
+                    setImage("mal2.png");
+                }
+                else if(counter==16) {
+                    setImage("mal3.png");
+                    counter=0;
+                }
             }
-            else if(counter==16) {
-                setImage("mal3.png");
-                counter=0;
+            
+            counter2++;
+            
+            if(getX()<260) {
+                setLocation(getX()+2,getY());
+            }
+            else if(getX()>540) {
+                setLocation(getX()-2,getY());
+            }
+            
+            if(counter2>28) { arah = Greenfoot.getRandomNumber(100) + 1; counter2 = 0;}
+            
+            if(arah < 30) {
+                setLocation(getX()-2,getY());
+                if(flagbelokkiri==0) turn(-20);
+                flagbelokkiri=1;
+            }
+            else if(arah > 70) {
+                setLocation(getX()+2,getY());
+                if(flagbelokkanan==0) turn(20);
+                flagbelokkanan=1;
+            }
+            else {
+                if(flagbelokkiri==1) {
+                    turn(20);
+                    flagbelokkiri=0;
+                }
+                else if(flagbelokkanan==1) {
+                    turn(-20);
+                    flagbelokkanan=0;
+                }
             }
         }
-        
-        counter2++;
-        
-        if(getX()<260) {
-            setLocation(getX()+2,getY());
-        }
-        else if(getX()>540) {
-            setLocation(getX()-2,getY());
-        }
-        
-        if(counter2>28) { arah = Greenfoot.getRandomNumber(100) + 1; counter2 = 0;}
-        
-        if(arah < 30) {
-            setLocation(getX()-2,getY());
-            if(flagbelokkiri==0) turn(-20);
-            flagbelokkiri=1;
-        }
-        else if(arah > 70) {
-            setLocation(getX()+2,getY());
-            if(flagbelokkanan==0) turn(20);
-            flagbelokkanan=1;
-        }
-        else {
-            if(flagbelokkiri==1) {
-                turn(20);
-                flagbelokkiri=0;
-            }
-            else if(flagbelokkanan==1) {
-                turn(-20);
-                flagbelokkanan=0;
-            }
-        }
-        
     }    
 }

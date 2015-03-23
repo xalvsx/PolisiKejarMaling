@@ -1,9 +1,11 @@
 #BlueJ class context
-comment0.params=i
-comment0.target=Game(int)
-comment1.params=
-comment1.target=int\ getCharacterMode()
+comment0.params=
+comment0.target=void\ setActive()
+comment1.params=i
+comment1.target=Game(int)
 comment2.params=
-comment2.target=void\ prepare()
-comment2.text=\r\n\ Prepare\ the\ world\ for\ the\ start\ of\ the\ program.\ That\ is\:\ create\ the\ initial\r\n\ objects\ and\ add\ them\ to\ the\ world.\r\n
-numComments=3
+comment2.target=int\ getCharacterMode()
+comment3.params=
+comment3.target=void\ prepare()
+comment3.text=\r\n\ Prepare\ the\ world\ for\ the\ start\ of\ the\ program.\ That\ is\:\ create\ the\ initial\r\n\ objects\ and\ add\ them\ to\ the\ world.\r\n
+numComments=4
