@@ -26,10 +26,10 @@ public class Polisi extends Actor
             counter=0;
         }
         
-        if(getX()<250) {
+        if(getX()<260) {
             setLocation(getX()+2,getY());
         }
-        else if(getX()>550) {
+        else if(getX()>545) {
             setLocation(getX()-2,getY());
         }
         
