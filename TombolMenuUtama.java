@@ -6,7 +6,7 @@ import greenfoot.*;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class TombolMainMenu extends Actor
+public class TombolMenuUtama extends Actor
 {
     /**
      * Act - do whatever the TombolMainMenu wants to do. This method is called whenever

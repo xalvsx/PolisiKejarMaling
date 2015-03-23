@@ -14,7 +14,7 @@ public class Rintangan extends Actor
      */
     public void cekPosisi() {
         if(getY() > 570) {
-            mainGame game = (mainGame) getWorld();
+            Game game = (Game) getWorld();
             game.removeObject(this);
         }
     }
