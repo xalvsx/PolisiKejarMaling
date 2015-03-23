@@ -31,7 +31,8 @@ public class Game extends World
     public Game(int i)
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(800, 600, 1); 
+        super(800, 600, 1);
+        setPaintOrder(Countdown.class,Maling.class,Polisi.class,Jalanan.class);
         character = i;
         j1 = new Jalanan(character);
         j2 = new Jalanan(character);
@@ -60,7 +61,12 @@ public class Game extends World
         addObject(maling, 355, 113);
         maling.setLocation(398, 58);
         polisi.setLocation(401, 555);
-        Countdown countdown = new Countdown();
-        addObject(countdown, 739, 445);
+        count();
+    }
+    
+    public void count()
+    {
+        Countdown down = new Countdown();
+        addObject(down, 400,300);
     }
 }
