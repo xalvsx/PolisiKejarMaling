@@ -16,9 +16,9 @@ public class Jalanan extends Actor
     {
         // Add your action code here.
         //System.out.println(this.getY());
-        this.setLocation(400, this.getY() + 2);
+        this.setLocation(this.getX(), this.getY() + 2);
         if(this.isAtEdge()) {
-            this.setLocation(400, 0);
+            this.setLocation(this.getX(), 0);
         }
     }    
 }

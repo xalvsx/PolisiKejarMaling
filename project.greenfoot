@@ -1,10 +1,11 @@
 #Greenfoot properties
-#Mon Mar 23 15:33:28 ICT 2015
+#Mon Mar 23 15:53:37 ICT 2015
 class.Polisi.image=pol1.png
 target3.editor.y=69
 target3.editor.x=458
 target2.name=Rintangan
 target2.naviview.expanded=true
+class.mainMenu.superclass=greenfoot.World
 class.Rintangan.superclass=greenfoot.Actor
 target2.editor.height=700
 dependency1.from=mainGame
@@ -62,5 +63,6 @@ version=2.7.0
 dependency3.type=UsesDependency
 package.numDependencies=3
 project.charset=UTF-8
+class.mainMenu.image=Background Siang.png
 target2.editor.width=900
 dependency2.to=mainGame
