@@ -1,6 +1,6 @@
 #BlueJ class context
 comment0.params=
-comment0.target=mainMenu()
+comment0.target=MenuUtama()
 comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ mainMenu.\r\n\ \r\n
 comment1.params=
 comment1.target=void\ prepare()
