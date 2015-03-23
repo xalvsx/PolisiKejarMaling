@@ -20,6 +20,5 @@ public class Jalanan extends Actor
         if(this.isAtEdge()) {
             this.setLocation(400, 0);
         }
-        //hallo tes dulu ia
     }    
 }

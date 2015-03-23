@@ -1,12 +1,19 @@
 #Greenfoot properties
+<<<<<<< HEAD
 #Mon Mar 23 15:21:48 ICT 2015
+=======
+#Mon Mar 23 15:23:09 ICT 2015
+>>>>>>> b248afad37712bbfc077177a901247db6a007c22
 target3.editor.y=69
 target3.editor.x=458
 target2.naviview.expanded=true
 target2.name=Rintangan
 class.Rintangan.superclass=greenfoot.Actor
 target2.editor.height=700
+<<<<<<< HEAD
 <<<<<<<=HEAD
+=======
+>>>>>>> b248afad37712bbfc077177a901247db6a007c22
 dependency1.from=mainGame
 target2.showInterface=false
 target1.editor.width=900
@@ -31,7 +38,10 @@ target1.naviview.expanded=true
 dependency1.to=Jalanan
 target3.height=50
 target1.editor.height=700
+<<<<<<< HEAD
 >>>>>>>=a57e7fa6ea4a6b584a555a4e9534304934b390f4
+=======
+>>>>>>> b248afad37712bbfc077177a901247db6a007c22
 target1.showInterface=false
 target3.typeParameters=
 target1.name=mainGame
@@ -64,4 +74,7 @@ dependency3.type=UsesDependency
 project.charset=UTF-8
 target2.editor.width=900
 dependency2.to=mainGame
+<<<<<<< HEAD
 =\=\=\=\=\=\=
+=======
+>>>>>>> b248afad37712bbfc077177a901247db6a007c22
