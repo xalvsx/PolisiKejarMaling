@@ -17,10 +17,10 @@ public class Polisi extends Actor
         character = i;
         
         if(i==1) {
-            setImage("carpol1.png");
+            setImage("motorpol.png");
         }
         else if(i==2) {
-            setImage("motorpol.png");
+            setImage("carpol1.png");
         }
     }
     
