@@ -2,7 +2,7 @@
 - nama gamenya apa
 - bikin logonya, boleh tulisan aja (pake font yang bagus) atau gambar+tulisan
 
-	==> Tampilan depan (isi nama...)
+	==> Tampilan depan (juju)
 - cari background
 - bikin tombol menu (start game, how to play, credits, exit)
 - pasang logo/judul yg udah jadi
