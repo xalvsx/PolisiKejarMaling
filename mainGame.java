@@ -34,5 +34,8 @@ public class mainGame extends World
         //addObject(new Jalanan(),400,200);
         //addObject(new Jalanan(),400,400);
         //addObject(new Jalanan(),400,600);
+        Polisi polisi = new Polisi();
+        addObject(polisi, 408, 558);
+        polisi.setLocation(355, 554);
     }
 }
