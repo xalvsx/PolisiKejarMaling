@@ -30,10 +30,10 @@ public class Maling extends Actor
             counter=0;
         }
         
-        if(getX()<250) {
+        if(getX()<260) {
             setLocation(getX()+2,getY());
         }
-        else if(getX()>550) {
+        else if(getX()>540) {
             setLocation(getX()-2,getY());
         }
         
