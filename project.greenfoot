@@ -1,5 +1,5 @@
 #Greenfoot properties
-#Mon Mar 23 15:53:37 ICT 2015
+#Mon Mar 23 16:08:11 ICT 2015
 class.Polisi.image=pol1.png
 target3.editor.y=69
 target3.editor.x=458
@@ -54,7 +54,7 @@ target3.width=80
 target3.editor.height=700
 target2.type=ClassTarget
 target3.showInterface=false
-world.lastInstantiated=mainGame
+world.lastInstantiated=mainMenu
 dependency1.type=UsesDependency
 class.mainGame.image=Background Siang.png
 target2.editor.y=20
@@ -65,4 +65,5 @@ package.numDependencies=3
 project.charset=UTF-8
 class.mainMenu.image=Background Siang.png
 target2.editor.width=900
+class.TombolMainMenu.superclass=greenfoot.Actor
 dependency2.to=mainGame
