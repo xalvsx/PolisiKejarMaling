@@ -12,15 +12,28 @@ public class Rintangan extends Actor
      * Act - do whatever the Rintangan wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+    public void cekNabrak() {
+        Actor polisi;
+        polisi = getOneObjectAtOffset(0, 0, Polisi.class);
+        if(polisi != null)
+        {
+            Game game = (Game) getWorld();
+            game.removeObject(this);
+        }
+        else cekPosisi();
+    }
+    
     public void cekPosisi() {
+        setLocation(getX(),getY() + 2);
+        
         if(getY() > 570) {
-            mainGame game = (mainGame) getWorld();
+            Game game = (Game) getWorld();
             game.removeObject(this);
         }
     }
     
     public void turun() {
-        setLocation(getX(),getY() + 2);
+        
     }
     
     public void act() 

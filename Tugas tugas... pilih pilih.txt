@@ -1,0 +1,32 @@
+	==> Logo (isi nama...)
+- nama gamenya apa
+- bikin logonya, boleh tulisan aja (pake font yang bagus) atau gambar+tulisan
+
+	==> Tampilan depan (juju)
+- cari background
+- bikin tombol menu (start game, how to play, credits, exit)
+- pasang logo/judul yg udah jadi
+
+	==> Tampilan how to play (isi nama...)
+- backgroundnya sama kayak tampilan depan
+- desain tampilannya, boleh pake photoshop sampe tulisan2nya juga
+- bikin tombol back to main menu
+
+	==> Tampilan pilih polisi+maling (isi nama...)
+- bikin 3 tombol (tombolnya panjang), boleh panjang kesamping boleh panjang kebawah/atas
+- masing2 tombol isinya :
+	1. polisi jalan + maling jalan
+	2. mobil polisi + mobil maling
+	3. motor polisi + motor maling
+- tombol back to main menu (boleh sama kayak tombol yg di how to play)
+
+	==> Tampilan komik cerita tentang maling (juju + yona)
+- terserah mereka
+
+	==> Tampilan you win (isi nama...)
+- bikin desainnya
+- tambahin tombol back to main menu + play again
+
+	==> Tampilan you lose (isi nama...)
+- bikin desainnya juga
+- tambahin tombol back to main menu + play again juga
