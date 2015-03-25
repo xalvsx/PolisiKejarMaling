@@ -28,10 +28,13 @@ public class MenuUtama extends World
     {
         Jalanan jalanan = new Jalanan(0);
         addObject(jalanan, 660, 296);
+        jalanan.setActive();
         Jalanan jalanan2 = new Jalanan(0);
         addObject(jalanan2, 344, 179);
+        jalanan2.setActive();
         Jalanan jalanan3 = new Jalanan(0);
         addObject(jalanan3, 448, 528);
+        jalanan3.setActive();
         jalanan.setLocation(619, 314);
         jalanan2.setLocation(199, 270);
         jalanan2.setLocation(213, 288);
@@ -62,5 +65,21 @@ public class MenuUtama extends World
         tombolhowtoplay.setLocation(620, 300);
         tombolcredit.setLocation(620, 400);
         tombolexit.setLocation(620, 500);
+        Polisi polisi = new Polisi(0);
+        addObject(polisi, 130, 542);
+        Polisi polisi2 = new Polisi(1);
+        addObject(polisi2, 210, 546);
+        Polisi polisi3 = new Polisi(2);
+        addObject(polisi3, 302, 550);
+        polisi2.setLocation(216, 544);
+        polisi.setLocation(120, 546);
+        polisi3.setLocation(322, 551);
+        Maling maling = new Maling(0);
+        addObject(maling, 119, 135);
+        Maling maling2 = new Maling(1);
+        addObject(maling2, 225, 140);
+        maling2.setLocation(222, 139);
+        Maling maling3 = new Maling(2);
+        addObject(maling3, 327, 145);
     }
 }
