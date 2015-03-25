@@ -32,7 +32,11 @@ public class Game extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(800, 600, 1);
+<<<<<<< HEAD
         setPaintOrder(Countdown.class,Maling.class,Polisi.class,Jalanan.class);
+=======
+        setPaintOrder(Rintangan.class,Polisi.class,Maling.class,Jalanan.class,Countdown.class);
+>>>>>>> c03e863742dfbe19c2af6e91d288cbcda48d61e8
         character = i;
         j1 = new Jalanan(character);
         j2 = new Jalanan(character);

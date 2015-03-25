@@ -1,5 +1,5 @@
 #Greenfoot properties
-#Wed Mar 25 12:34:50 ICT 2015
+#Wed Mar 25 13:22:48 ICT 2015
 target16.name=Jalanan
 target2.name=TextClass
 target9.name=MenuUtama
@@ -56,7 +56,7 @@ class.TombolStart.image=start.jpg
 target8.editor.width=900
 target3.y=10
 target3.x=70
->>>>>>>=4a2490bbf64e1a31b127ecf883efc91a23bbc29e
+>>>>>>>=c03e863742dfbe19c2af6e91d288cbcda48d61e8
 target7.typeParameters=
 target8.height=50
 class.MenuUtama.superclass=greenfoot.World
@@ -305,5 +305,5 @@ dependency14.to=TombolMenuUtama
 class.TombolStart.superclass=TombolMenuUtama
 target1.height=50
 target4.typeParameters=
-mainWindow.width=1378
+mainWindow.width=1370
 =\=\=\=\=\=\=
