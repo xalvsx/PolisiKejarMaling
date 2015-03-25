@@ -1,5 +1,5 @@
 #Greenfoot properties
-#Wed Mar 25 13:22:48 ICT 2015
+#Wed Mar 25 13:56:56 ICT 2015
 target16.name=Jalanan
 target2.name=TextClass
 target9.name=MenuUtama
@@ -87,6 +87,7 @@ target14.typeParameters=
 target8.width=80
 target13.editor.height=700
 target4.editor.height=700
+class.TombolBackToMainMenu.superclass=TombolMenuUtama
 target12.type=ClassTarget
 target13.height=50
 target4.width=100
@@ -148,6 +149,7 @@ target16.editor.x=0
 target17.height=50
 target6.typeParameters=
 target4.type=ClassTarget
+class.TombolBackToMainMenu.image=backgroundToMain.png
 class.TombolExit.superclass=TombolMenuUtama
 class.TombolKarakter1.image=backgroundCharacter1.png
 dependency11.to=Countdown
@@ -289,21 +291,21 @@ target8.y=130
 target8.x=10
 target3.editor.width=900
 target12.width=90
-dependency2.type=UsesDependency
 class.TombolCredit.image=credit.jpg
+dependency2.type=UsesDependency
 target4.y=370
 target4.x=10
-target12.height=50
-target8.editor.y=36
-dependency6.from=Game
 dependency9.type=UsesDependency
+dependency6.from=Game
+target8.editor.y=36
+target12.height=50
 target8.editor.x=318
 target14.editor.height=700
 target11.editor.width=900
-world.lastInstantiated=Game
+world.lastInstantiated=SelectPlayer
 dependency14.to=TombolMenuUtama
 class.TombolStart.superclass=TombolMenuUtama
 target1.height=50
-target4.typeParameters=
 mainWindow.width=1370
+target4.typeParameters=
 =\=\=\=\=\=\=
