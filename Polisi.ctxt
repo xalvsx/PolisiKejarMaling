@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=i
+comment0.target=Polisi(int)
+comment1.params=
+comment1.target=void\ setActive()
+comment2.params=
+comment2.target=void\ act()
+numComments=3
