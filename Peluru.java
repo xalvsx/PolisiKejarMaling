@@ -50,6 +50,13 @@ public class Peluru extends Actor
     public void act() 
     {
         // Add your action code here.
-        cekNabrak();
+       /* 
+       if(Greenfoot.isKeyDown("space"))
+       {
+           peluru();
+       }
+       maunya pas pencet spasi itu baru bisa nembak (?)
+       */
+       cekNabrak();
     } 
 }
