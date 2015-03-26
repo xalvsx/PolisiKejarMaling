@@ -41,7 +41,7 @@ public class Game extends World
         super(800, 600, 1);
         setPaintOrder(Countdown.class,Maling.class,Polisi.class,Jalanan.class);
         setPaintOrder(Rintangan.class,Polisi.class,Maling.class,Jalanan.class,Countdown.class);
-        setPaintOrder(Countdown.class,Rintangan.class,Polisi.class,Maling.class,Jalanan.class);
+        setPaintOrder(Countdown.class,Peluru.class,Rintangan.class,Polisi.class,Maling.class,Jalanan.class);
         character = i;
         if (i==1) {
             speed = 4;
