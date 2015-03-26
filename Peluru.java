@@ -33,7 +33,7 @@ public class Peluru extends Actor
     
      public void cekPosisi()
     {
-        setLocation(getX(), getY() + speed);
+        setLocation(getX(), getY() - speed);
         
         if(getY() > 570)
         {
