@@ -35,7 +35,7 @@ public class Peluru extends Actor
     {
         setLocation(getX(), getY() - speed);
         
-        if(getY() > 570)
+        if(isAtEdge())
         {
             Game game = (Game) getWorld();
             game.removeObject(this);
