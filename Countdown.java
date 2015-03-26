@@ -16,41 +16,18 @@ public class Countdown extends TextClass
     private int counter=0;
     GreenfootImage img;
     
-    public Countdown() {
-        img = new GreenfootImage(450, 60); 
-        img.setColor(java.awt.Color.white); 
-        img.setFont(new java.awt.Font("Arial Black",java.awt.Font.PLAIN,20)); 
-        img.drawString("1...", 450, 350);
-        setImage(img);
-            //System.out.println("masuk");
+    public Countdown(int i) {
+        GreenfootImage image = new GreenfootImage(100, 100);
+        image.setColor(java.awt.Color.black); 
+        image.setFont(new java.awt.Font("Verdana",java.awt.Font.PLAIN,36)); 
+        String tulisan = "";
+        if(i!=4) {
+            tulisan = i + "....";
+        }
+        else {
+            tulisan = "GO!!";
+        }
+        image.drawString(tulisan, 16,36);
+        setImage(image);
     }
-    
-    public void act() 
-    {
-        counter++;
-        if(counter==40) {
-            Game game = (Game)getWorld();
-            game.setActive();
-        }
-        /*
-        if(counter==10) {
-           
-        }
-        else if(counter==20) {
-            img.drawString("2...", 400, 350);
-            setImage(img);
-        }
-        else if(counter==30) {
-            img.drawString("3...", 400, 350);
-            setImage(img);
-        }
-        else if(counter==40) {
-            img.drawString("GO...!!", 400, 350);
-            setImage(img);
-            Game game = (Game)getWorld();
-            game.setActive();
-            game.removeObject(this);
-        }
-        */
-    }    
 }

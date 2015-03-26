@@ -1,0 +1,19 @@
+Lucy :
+	- kecilin gambar jerigen, botol, sama orang nyebrang (kegedean di greenfoot)
+	- bikin jerigen sama botol bisa turun kayak rintangannya jeje
+	- bikin juga supaya kalo nabrak polisi, jerigen/botolnya ilang
+	- kalo jerigen/botolnya udah sampe paling bawah, ilangin
+
+Jeje :
+	- bikin lubang/oli nya muncul secara random dijalanan (koordinat x nya diantara 260-545 random, koordinat y nya selalu 100)
+
+Yona :
+	- bikin class bangunan, 1 class aja pake 1 gambar dulu
+	- bikin bangunannya bisa turun kebawah kayak rintangannya jeje
+	- bikin bangunannya muncul secara random disamping jalanan(koordinat x nya diantara 50-200 kalo kiri, 600-750 kalo kanan. koordinat y nya selalu 50)
+
+Juju :
+	- cari gambar peluru (ngadep keatas) 1 gambar aja jgn sprite, jgn gede2, sama gambar pistol
+	- abis itu bikin class peluru, bkin supaya pas dijalanin pelurunya jalan keatas
+	- bikin pelurunya sampe atas hilang
+	- bikin pelurunya kalo kena maling hilang juga
