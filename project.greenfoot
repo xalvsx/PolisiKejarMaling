@@ -1,11 +1,7 @@
 #Greenfoot project file
 =\=\=\=\=\=\=
 <<<<<<<=HEAD
-<<<<<<< HEAD
->>>>>>>=624f8895403f064c3aebfa754cbf992bc3a61d20
-=======
->>>>>>>=eec1f35e354001275f3afab339cf8d9e9a7a51a5
->>>>>>> 50e12a4d5467400413045e3703ae1a015ccac5b0
+>>>>>>>=50e12a4d5467400413045e3703ae1a015ccac5b0
 class.Countdown.superclass=TextClass
 class.Game.image=Green-Grass-Bg.jpg
 class.Game.superclass=greenfoot.World
@@ -16,6 +12,8 @@ class.Maling.superclass=greenfoot.Actor
 class.MenuUtama.image=background.jpg
 class.MenuUtama.superclass=greenfoot.World
 class.OrangNyebrang.superclass=greenfoot.Actor
+class.Peluru.image=Peluru.png
+class.Peluru.superclass=greenfoot.Actor
 class.Polisi.image=pol1.png
 class.Polisi.superclass=greenfoot.Actor
 class.Rintangan.superclass=greenfoot.Actor
@@ -70,22 +68,6 @@ dependency13.type=UsesDependency
 dependency14.from=MenuUtama
 dependency14.to=TombolMenuUtama
 dependency14.type=UsesDependency
-<<<<<<< HEAD
-dependency15.from=TombolKarakter2
-dependency15.to=Game
-dependency15.type=UsesDependency
-dependency16.from=TombolKarakter3
-dependency16.to=Game
-dependency16.type=UsesDependency
-dependency17.from=TombolKarakter1
-dependency17.to=Game
-dependency17.type=UsesDependency
-dependency18.from=Rintangan
-dependency18.to=Polisi
-dependency18.type=UsesDependency
-dependency19.from=SelectPlayer
-dependency19.to=TombolBackToMainMenu
-=======
 dependency15.from=SelectPlayer
 dependency15.to=TombolKarakter3
 dependency15.type=UsesDependency
@@ -100,46 +82,46 @@ dependency18.to=Polisi
 dependency18.type=UsesDependency
 dependency19.from=MenuUtama
 dependency19.to=Maling
->>>>>>> 50e12a4d5467400413045e3703ae1a015ccac5b0
 dependency19.type=UsesDependency
 dependency2.from=MenuUtama
 dependency2.to=TombolHowtoPLay
 dependency2.type=UsesDependency
-<<<<<<< HEAD
-dependency20.from=SelectPlayer
-dependency20.to=TombolKarakter3
-=======
 dependency20.from=Game
 dependency20.to=Rintangan
->>>>>>> 50e12a4d5467400413045e3703ae1a015ccac5b0
 dependency20.type=UsesDependency
-dependency21.from=SelectPlayer
-dependency21.to=TombolKarakter1
+dependency21.from=TombolKarakter3
+dependency21.to=Game
 dependency21.type=UsesDependency
-<<<<<<< HEAD
-dependency22.from=SelectPlayer
-dependency22.to=TombolKarakter2
-dependency22.type=UsesDependency
-dependency23.from=Game
-dependency23.to=Rintangan
-dependency23.type=UsesDependency
-=======
-dependency22.from=TombolKarakter3
+dependency22.from=TombolKarakter1
 dependency22.to=Game
 dependency22.type=UsesDependency
-dependency23.from=TombolKarakter1
-dependency23.to=Game
+dependency23.from=Rintangan
+dependency23.to=Polisi
 dependency23.type=UsesDependency
-dependency24.from=Rintangan
-dependency24.to=Polisi
+dependency24.from=TombolStart
+dependency24.to=SelectPlayer
 dependency24.type=UsesDependency
-dependency25.from=TombolStart
-dependency25.to=SelectPlayer
+dependency25.from=SelectPlayer
+dependency25.to=TombolBackToMainMenu
 dependency25.type=UsesDependency
->>>>>>> 50e12a4d5467400413045e3703ae1a015ccac5b0
+dependency26.from=TombolBackToMainMenu
+dependency26.to=MenuUtama
+dependency26.type=UsesDependency
+dependency27.from=TombolKarakter2
+dependency27.to=Game
+dependency27.type=UsesDependency
+dependency28.from=Peluru
+dependency28.to=Game
+dependency28.type=UsesDependency
+dependency29.from=Peluru
+dependency29.to=Maling
+dependency29.type=UsesDependency
 dependency3.from=MenuUtama
 dependency3.to=TombolCredit
 dependency3.type=UsesDependency
+dependency30.from=Peluru
+dependency30.to=Polisi
+dependency30.type=UsesDependency
 dependency4.from=MenuUtama
 dependency4.to=TombolExit
 dependency4.type=UsesDependency
@@ -161,14 +143,9 @@ dependency9.type=UsesDependency
 mainWindow.height=744
 mainWindow.width=1378
 mainWindow.x=-8
-mainWindow.y=-8
-<<<<<<< HEAD
-package.numDependencies=23
-package.numTargets=26
-=======
-package.numDependencies=25
-package.numTargets=25
->>>>>>> 50e12a4d5467400413045e3703ae1a015ccac5b0
+mainWindow.y=0
+package.numDependencies=30
+package.numTargets=27
 project.charset=UTF-8
 target1.editor.height=700
 target1.editor.width=900
@@ -182,11 +159,7 @@ target1.type=ClassTarget
 target1.typeParameters=
 target1.width=80
 target1.x=10
-<<<<<<< HEAD
-target1.y=550
-=======
 target1.y=610
->>>>>>> 50e12a4d5467400413045e3703ae1a015ccac5b0
 target10.editor.height=700
 target10.editor.width=900
 target10.editor.x=0
@@ -228,167 +201,95 @@ target12.x=10
 target12.y=310
 target13.editor.height=700
 target13.editor.width=900
-<<<<<<< HEAD
-target13.editor.x=40
-target13.editor.y=20
-target13.height=50
-target13.name=TombolBackToMainMenu
-=======
 target13.editor.x=0
 target13.editor.y=0
 target13.height=50
-target13.name=botolminum
->>>>>>> 50e12a4d5467400413045e3703ae1a015ccac5b0
+target13.name=TombolBackToMainMenu
 target13.naviview.expanded=true
 target13.showInterface=false
 target13.type=ClassTarget
 target13.typeParameters=
-<<<<<<< HEAD
 target13.width=170
 target13.x=10
-=======
-target13.width=90
-target13.x=150
->>>>>>> 50e12a4d5467400413045e3703ae1a015ccac5b0
-target13.y=490
+target13.y=730
 target14.editor.height=700
 target14.editor.width=900
 target14.editor.x=0
 target14.editor.y=0
 target14.height=50
-<<<<<<< HEAD
 target14.name=botolminum
-=======
-target14.name=TombolPilihKarakter
->>>>>>> 50e12a4d5467400413045e3703ae1a015ccac5b0
 target14.naviview.expanded=true
 target14.showInterface=false
 target14.type=ClassTarget
 target14.typeParameters=
-<<<<<<< HEAD
 target14.width=90
-target14.x=190
+target14.x=150
 target14.y=490
-=======
-target14.width=140
-target14.x=120
-target14.y=370
->>>>>>> 50e12a4d5467400413045e3703ae1a015ccac5b0
 target15.editor.height=700
 target15.editor.width=900
 target15.editor.x=0
 target15.editor.y=0
 target15.height=50
-<<<<<<< HEAD
 target15.name=TombolPilihKarakter
-=======
-target15.name=TambahKecepatan
->>>>>>> 50e12a4d5467400413045e3703ae1a015ccac5b0
 target15.naviview.expanded=true
 target15.showInterface=false
 target15.type=ClassTarget
 target15.typeParameters=
-<<<<<<< HEAD
 target15.width=140
 target15.x=120
 target15.y=370
-=======
-target15.width=130
-target15.x=10
-target15.y=490
->>>>>>> 50e12a4d5467400413045e3703ae1a015ccac5b0
 target16.editor.height=700
-target16.editor.width=900
-target16.editor.x=0
-target16.editor.y=0
+target16.editor.width=685
+target16.editor.x=40
+target16.editor.y=20
 target16.height=50
-<<<<<<< HEAD
-target16.name=TambahKecepatan
-=======
-target16.name=lubang
->>>>>>> 50e12a4d5467400413045e3703ae1a015ccac5b0
+target16.name=Peluru
 target16.naviview.expanded=true
 target16.showInterface=false
 target16.type=ClassTarget
 target16.typeParameters=
-<<<<<<< HEAD
-target16.width=130
-target16.x=100
-target16.y=550
-=======
 target16.width=80
-target16.x=70
-target16.y=70
->>>>>>> 50e12a4d5467400413045e3703ae1a015ccac5b0
+target16.x=190
+target16.y=670
 target17.editor.height=700
 target17.editor.width=900
 target17.editor.x=0
 target17.editor.y=0
 target17.height=50
-<<<<<<< HEAD
-target17.name=lubang
-=======
-target17.name=oli
->>>>>>> 50e12a4d5467400413045e3703ae1a015ccac5b0
+target17.name=TambahKecepatan
 target17.naviview.expanded=true
 target17.showInterface=false
 target17.type=ClassTarget
 target17.typeParameters=
-target17.width=80
-<<<<<<< HEAD
-target17.x=70
-target17.y=70
-=======
-target17.x=200
-target17.y=130
->>>>>>> 50e12a4d5467400413045e3703ae1a015ccac5b0
+target17.width=130
+target17.x=10
+target17.y=490
 target18.editor.height=700
-target18.editor.width=900
-target18.editor.x=0
-target18.editor.y=0
+target18.editor.width=719
+target18.editor.x=670
+target18.editor.y=31
 target18.height=50
-<<<<<<< HEAD
-target18.name=oli
+target18.name=lubang
 target18.naviview.expanded=true
-=======
-target18.name=Game
-target18.naviview.expanded=false
->>>>>>> 50e12a4d5467400413045e3703ae1a015ccac5b0
 target18.showInterface=false
 target18.type=ClassTarget
 target18.typeParameters=
 target18.width=80
-<<<<<<< HEAD
-target18.x=200
-target18.y=130
+target18.x=70
+target18.y=70
 target19.editor.height=700
 target19.editor.width=900
-target19.editor.x=39
-target19.editor.y=9
+target19.editor.x=0
+target19.editor.y=0
 target19.height=50
-target19.name=Game
-=======
-target18.x=10
-target18.y=550
-target19.editor.height=700
-target19.editor.width=900
-target19.editor.x=419
-target19.editor.y=39
-target19.height=50
-target19.name=TombolKarakter2
->>>>>>> 50e12a4d5467400413045e3703ae1a015ccac5b0
+target19.name=oli
 target19.naviview.expanded=true
 target19.showInterface=false
 target19.type=ClassTarget
 target19.typeParameters=
-<<<<<<< HEAD
 target19.width=80
-target19.x=140
-=======
-target19.width=120
-target19.x=10
->>>>>>> 50e12a4d5467400413045e3703ae1a015ccac5b0
-target19.y=430
+target19.x=200
+target19.y=130
 target2.editor.height=700
 target2.editor.width=900
 target2.editor.x=40
@@ -404,156 +305,108 @@ target2.x=70
 target2.y=10
 target20.editor.height=700
 target20.editor.width=900
-target20.editor.x=40
-target20.editor.y=20
+target20.editor.x=0
+target20.editor.y=0
 target20.height=50
-<<<<<<< HEAD
-target20.name=TombolKarakter2
-=======
-target20.name=TombolMenuUtama
->>>>>>> 50e12a4d5467400413045e3703ae1a015ccac5b0
-target20.naviview.expanded=true
+target20.name=Game
+target20.naviview.expanded=false
 target20.showInterface=false
 target20.type=ClassTarget
 target20.typeParameters=
-<<<<<<< HEAD
-target20.width=120
+target20.width=80
 target20.x=10
-target20.y=430
+target20.y=550
 target21.editor.height=700
 target21.editor.width=900
-target21.editor.x=40
-target21.editor.y=20
+target21.editor.x=419
+target21.editor.y=39
 target21.height=50
-target21.name=TombolMenuUtama
-=======
-target20.width=130
-target20.x=10
-target20.y=190
-target21.editor.height=700
-target21.editor.width=900
-target21.editor.x=0
-target21.editor.y=0
-target21.height=50
-target21.name=TombolKarakter3
->>>>>>> 50e12a4d5467400413045e3703ae1a015ccac5b0
+target21.name=TombolKarakter2
 target21.naviview.expanded=true
 target21.showInterface=false
 target21.type=ClassTarget
 target21.typeParameters=
-<<<<<<< HEAD
-target21.width=110
-target21.x=10
-target21.y=190
-=======
 target21.width=120
-target21.x=100
-target21.y=550
->>>>>>> 50e12a4d5467400413045e3703ae1a015ccac5b0
+target21.x=10
+target21.y=430
 target22.editor.height=700
 target22.editor.width=900
 target22.editor.x=40
 target22.editor.y=20
 target22.height=50
-<<<<<<< HEAD
-target22.name=TombolKarakter3
-=======
-target22.name=TombolStart
->>>>>>> 50e12a4d5467400413045e3703ae1a015ccac5b0
+target22.name=TombolMenuUtama
 target22.naviview.expanded=true
 target22.showInterface=false
 target22.type=ClassTarget
 target22.typeParameters=
-<<<<<<< HEAD
-target22.width=120
+target22.width=130
 target22.x=10
-target22.y=670
-=======
-target22.width=90
-target22.x=10
-target22.y=130
->>>>>>> 50e12a4d5467400413045e3703ae1a015ccac5b0
+target22.y=190
 target23.editor.height=700
 target23.editor.width=900
 target23.editor.x=0
 target23.editor.y=0
 target23.height=50
-<<<<<<< HEAD
-target23.name=TombolStart
-=======
-target23.name=TombolKarakter1
->>>>>>> 50e12a4d5467400413045e3703ae1a015ccac5b0
+target23.name=TombolKarakter3
 target23.naviview.expanded=true
 target23.showInterface=false
 target23.type=ClassTarget
 target23.typeParameters=
-<<<<<<< HEAD
-target23.width=90
-target23.x=10
-target23.y=130
+target23.width=120
+target23.x=100
+target23.y=550
 target24.editor.height=700
 target24.editor.width=900
 target24.editor.x=40
 target24.editor.y=20
 target24.height=50
-target24.name=TombolKarakter1
+target24.name=TombolStart
+target24.naviview.expanded=true
 target24.showInterface=false
 target24.type=ClassTarget
 target24.typeParameters=
-target24.width=120
-target24.x=140
-=======
-target23.width=120
-target23.x=100
-target23.y=610
-target24.editor.height=700
-target24.editor.width=900
-target24.editor.x=0
-target24.editor.y=0
-target24.height=50
-target24.name=Rintangan
-target24.naviview.expanded=false
-target24.showInterface=false
-target24.type=ClassTarget
-target24.typeParameters=
-target24.width=80
+target24.width=90
 target24.x=10
->>>>>>> 50e12a4d5467400413045e3703ae1a015ccac5b0
-target24.y=670
+target24.y=130
 target25.editor.height=700
 target25.editor.width=900
 target25.editor.x=0
 target25.editor.y=0
 target25.height=50
-<<<<<<< HEAD
-target25.name=Rintangan
-=======
-target25.name=Jalanan
-target25.naviview.expanded=false
->>>>>>> 50e12a4d5467400413045e3703ae1a015ccac5b0
+target25.name=TombolKarakter1
+target25.naviview.expanded=true
 target25.showInterface=false
 target25.type=ClassTarget
 target25.typeParameters=
-target25.width=80
-<<<<<<< HEAD
-target25.x=10
+target25.width=120
+target25.x=100
 target25.y=610
 target26.editor.height=700
-target26.editor.width=900
-target26.editor.x=40
-target26.editor.y=20
+target26.editor.width=572
+target26.editor.x=768
+target26.editor.y=0
 target26.height=50
-target26.name=Jalanan
+target26.name=Rintangan
+target26.naviview.expanded=false
 target26.showInterface=false
 target26.type=ClassTarget
 target26.typeParameters=
 target26.width=80
 target26.x=10
-target26.y=730
-=======
-target25.x=100
-target25.y=670
->>>>>>> 50e12a4d5467400413045e3703ae1a015ccac5b0
+target26.y=670
+target27.editor.height=700
+target27.editor.width=900
+target27.editor.x=0
+target27.editor.y=0
+target27.height=50
+target27.name=Jalanan
+target27.naviview.expanded=false
+target27.showInterface=false
+target27.type=ClassTarget
+target27.typeParameters=
+target27.width=80
+target27.x=100
+target27.y=670
 target3.editor.height=700
 target3.editor.width=900
 target3.editor.x=0
@@ -569,13 +422,8 @@ target3.x=10
 target3.y=370
 target4.editor.height=700
 target4.editor.width=900
-<<<<<<< HEAD
-target4.editor.x=40
-target4.editor.y=20
-=======
 target4.editor.x=0
 target4.editor.y=0
->>>>>>> 50e12a4d5467400413045e3703ae1a015ccac5b0
 target4.height=50
 target4.name=TombolHowtoPLay
 target4.naviview.expanded=true
@@ -583,11 +431,7 @@ target4.showInterface=false
 target4.type=ClassTarget
 target4.typeParameters=
 target4.width=130
-<<<<<<< HEAD
-target4.x=130
-=======
 target4.x=150
->>>>>>> 50e12a4d5467400413045e3703ae1a015ccac5b0
 target4.y=190
 target5.editor.height=700
 target5.editor.width=900
@@ -600,13 +444,8 @@ target5.showInterface=false
 target5.type=ClassTarget
 target5.typeParameters=
 target5.width=110
-<<<<<<< HEAD
-target5.x=10
-target5.y=250
-=======
 target5.x=160
 target5.y=10
->>>>>>> 50e12a4d5467400413045e3703ae1a015ccac5b0
 target6.editor.height=700
 target6.editor.width=900
 target6.editor.x=40
@@ -618,13 +457,8 @@ target6.showInterface=false
 target6.type=ClassTarget
 target6.typeParameters=
 target6.width=90
-<<<<<<< HEAD
-target6.x=180
-target6.y=10
-=======
 target6.x=10
 target6.y=250
->>>>>>> 50e12a4d5467400413045e3703ae1a015ccac5b0
 target7.editor.height=700
 target7.editor.width=900
 target7.editor.x=0
@@ -636,13 +470,8 @@ target7.showInterface=false
 target7.type=ClassTarget
 target7.typeParameters=
 target7.width=100
-<<<<<<< HEAD
-target7.x=130
-target7.y=610
-=======
 target7.x=140
 target7.y=430
->>>>>>> 50e12a4d5467400413045e3703ae1a015ccac5b0
 target8.editor.height=700
 target8.editor.width=900
 target8.editor.x=419
@@ -667,14 +496,7 @@ target9.showInterface=false
 target9.type=ClassTarget
 target9.typeParameters=
 target9.width=90
-<<<<<<< HEAD
-target9.x=130
-target9.y=250
-version=2.7.0
-world.lastInstantiated=Game
-=======
 target9.x=110
 target9.y=250
 version=2.7.0
-world.lastInstantiated=MenuUtama
->>>>>>> 50e12a4d5467400413045e3703ae1a015ccac5b0
+world.lastInstantiated=Game
