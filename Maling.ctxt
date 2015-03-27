@@ -2,7 +2,13 @@
 comment0.params=i
 comment0.target=Maling(int)
 comment1.params=
-comment1.target=void\ setActive()
+comment1.target=void\ maju()
 comment2.params=
-comment2.target=void\ act()
-numComments=3
+comment2.target=void\ mundur()
+comment3.params=
+comment3.target=void\ setActive()
+comment4.params=
+comment4.target=void\ menuMode()
+comment5.params=
+comment5.target=void\ act()
+numComments=6

@@ -15,5 +15,10 @@ public class TombolKarakter1 extends TombolPilihKarakter
     public void act() 
     {
         // Add your action code here.
+        TombolHover();
+        
+        if(Greenfoot.mouseClicked(this)){
+            Greenfoot.setWorld(new Game(0));
+        }
     }    
 }

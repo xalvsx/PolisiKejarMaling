@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=speed
+comment0.target=void\ SetSpeed(int)
+comment1.params=
+comment1.target=void\ cekNabrak()
+comment2.params=
+comment2.target=void\ cekPosisi()
+comment3.params=speed
+comment3.target=Peluru(int)
+comment4.params=
+comment4.target=void\ act()
+numComments=5
