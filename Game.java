@@ -115,7 +115,19 @@ public class Game extends World
             /* Rintangan
              *   buat logika munculin rintangan secara random disini
              */
-            
+            int ct = 0;
+            ct++;
+            if(ct == 10)
+            {
+                int pil = Greenfoot.getRandomNumber(2);
+                int x = 250 + Greenfoot.getRandomNumber(100);
+                int y = 50 + Greenfoot.getRandomNumber(100);
+                if(pil == 1)
+                    addObject(new Rintangan(), x, y);
+                else if(pil == 2)
+                    addObject(new Rintangan(), x, y);
+                ct = 0;
+            }
             /* Dekorasi
              *   buat logika munculin dekorasi disamping jalan secara random disini
              */
