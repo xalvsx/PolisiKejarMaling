@@ -502,4 +502,4 @@ target9.width=90
 target9.x=110
 target9.y=250
 version=2.7.0
-world.lastInstantiated=Game
+world.lastInstantiated=SelectPlayer

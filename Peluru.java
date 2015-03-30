@@ -56,7 +56,7 @@ public class Peluru extends Actor
            peluru();
        }
        maunya pas pencet spasi itu baru bisa nembak (?)
-       */
-       cekNabrak();
+       */ 
+      cekNabrak();
     } 
 }
