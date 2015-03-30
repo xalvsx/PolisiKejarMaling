@@ -120,7 +120,7 @@ public class Game extends World
             ct++;
             if(ct == 150)
             {
-                int pil = Greenfoot.getRandomNumber(5);
+                int pil = Greenfoot.getRandomNumber(8);
                 int x = 272 + Greenfoot.getRandomNumber(253);
                 int y = 100;
                 if(pil == 0)
@@ -134,6 +134,14 @@ public class Game extends World
                 else if(pil == 2)
                 {
                     addObject(new petir(speed), x, y);
+                }
+                else if(pil ==3)
+                {
+                    addObject(new botolminum(speed),x,y);
+                }
+                else if(pil == 4)
+                {
+                    addObject(new jerigenbensin(speed),x,y);
                 }
                 ct = 0;
                 
