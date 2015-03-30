@@ -146,9 +146,13 @@ public class Game extends World
                 ct = 0;
                 
             }
-            /* Dekorasi
-             *   buat logika munculin dekorasi disamping jalan secara random disini
-             */
+            
+            if(ct == 75) {
+                /* Dekorasi
+                 *   buat logika munculin dekorasi disamping jalan secara random disini
+                 */
+            }
+            
         }
     }
     
