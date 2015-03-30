@@ -1,19 +1,19 @@
 import greenfoot.*;
 
 /**
- * Write a description of class botolminum here.
+ * Write a description of class petir here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class botolminum extends TambahKecepatan
+public class petir extends TambahKecepatan
 {
     /**
-     * Act - do whatever the botolminum wants to do. This method is called whenever
+     * Act - do whatever the petir wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     
-    public botolminum(int speed) {
+     public petir(int speed) {
         setSpeed(speed);
     }
     
@@ -21,5 +21,6 @@ public class botolminum extends TambahKecepatan
     {
         // Add your action code here.
         cekNabrak();
-    }   
+    }    
+     
 }

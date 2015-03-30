@@ -22,6 +22,7 @@ public class Game extends World
     private int faktor = 35;
     private int active = 0;
     private Countdown down;
+    int ct = 0;
     
     Polisi polisi;
     Maling maling;
@@ -39,7 +40,7 @@ public class Game extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(800, 600, 1);
-        setPaintOrder(Countdown.class,Peluru.class,Rintangan.class,Polisi.class,Maling.class,Jalanan.class);
+        setPaintOrder(Countdown.class,Peluru.class,Rintangan.class,TambahKecepatan.class,Polisi.class,Maling.class,Jalanan.class);
         character = i;
         if (i==1) {
             speed = 4;
@@ -116,9 +117,42 @@ public class Game extends World
              *   buat logika munculin rintangan secara random disini
              */
             
-            /* Dekorasi
-             *   buat logika munculin dekorasi disamping jalan secara random disini
-             */
+            ct++;
+            if(ct == 150)
+            {
+                int pil = Greenfoot.getRandomNumber(8);
+                int x = 272 + Greenfoot.getRandomNumber(253);
+                int y = 100;
+                if(pil == 0)
+                {
+                    addObject(new oli(speed), x, y);
+                }
+                else if(pil == 1)
+                {
+                    addObject(new lubang(speed), x, y);
+                }
+                else if(pil == 2)
+                {
+                    addObject(new petir(speed), x, y);
+                }
+                else if(pil ==3)
+                {
+                    addObject(new botolminum(speed),x,y);
+                }
+                else if(pil == 4)
+                {
+                    addObject(new jerigenbensin(speed),x,y);
+                }
+                ct = 0;
+                
+            }
+            
+            if(ct == 75) {
+                /* Dekorasi
+                 *   buat logika munculin dekorasi disamping jalan secara random disini
+                 */
+            }
+            
         }
     }
     
