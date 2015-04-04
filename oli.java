@@ -12,11 +12,13 @@ public class oli extends Rintangan
      * Act - do whatever the oli wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+    public oli(int speed) {
+        setSpeed(speed);
+    }
+    
     public void act() 
     {
         // Add your action code here.
         cekNabrak();
-        turun();
-        
     }    
 }

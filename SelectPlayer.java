@@ -27,6 +27,9 @@ public class SelectPlayer extends World
      */
     private void prepare()
     {
+        TombolBackToMainMenu tombolbacktomainmenu = new TombolBackToMainMenu();
+        addObject(tombolbacktomainmenu, 673, 565);
+        tombolbacktomainmenu.setLocation(670, 560);
         TombolKarakter3 tombolkarakter3 = new TombolKarakter3();
         addObject(tombolkarakter3, 169, 291);
         TombolKarakter1 tombolkarakter1 = new TombolKarakter1();

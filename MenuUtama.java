@@ -65,21 +65,21 @@ public class MenuUtama extends World
         tombolhowtoplay.setLocation(620, 300);
         tombolcredit.setLocation(620, 400);
         tombolexit.setLocation(620, 500);
-        Polisi polisi = new Polisi(0);
+        Polisi polisi = new Polisi(3);
         addObject(polisi, 130, 542);
-        Polisi polisi2 = new Polisi(1);
+        Polisi polisi2 = new Polisi(4);
         addObject(polisi2, 210, 546);
-        Polisi polisi3 = new Polisi(2);
+        Polisi polisi3 = new Polisi(5);
         addObject(polisi3, 302, 550);
         polisi2.setLocation(216, 544);
         polisi.setLocation(120, 546);
         polisi3.setLocation(322, 551);
-        Maling maling = new Maling(0);
+        Maling maling = new Maling(3);
         addObject(maling, 119, 135);
-        Maling maling2 = new Maling(1);
+        Maling maling2 = new Maling(4);
         addObject(maling2, 225, 140);
         maling2.setLocation(222, 139);
-        Maling maling3 = new Maling(2);
+        Maling maling3 = new Maling(5);
         addObject(maling3, 327, 145);
     }
 }

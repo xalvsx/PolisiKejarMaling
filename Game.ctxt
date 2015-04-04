@@ -9,7 +9,13 @@ comment3.params=
 comment3.target=void\ prepare()
 comment3.text=\r\n\ Prepare\ the\ world\ for\ the\ start\ of\ the\ program.\ That\ is\:\ create\ the\ initial\r\n\ objects\ and\ add\ them\ to\ the\ world.\r\n
 comment4.params=
+<<<<<<< HEAD
 comment4.target=void\ count()
 comment5.params=
 comment5.target=void\ act()
+=======
+comment4.target=void\ act()
+comment5.params=i
+comment5.target=void\ count(int)
+>>>>>>> 015e53f69840dfda1a19320e75caef184848a184
 numComments=6
