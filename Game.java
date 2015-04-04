@@ -14,6 +14,7 @@ public class Game extends World
      * 
      */
     private int character = 0;
+    private int counter = 0;
     
     Jalanan j1,j2,j3;
     
@@ -32,10 +33,10 @@ public class Game extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(800, 600, 1);
-<<<<<<< HEAD
-=======
+//<<<<<<< HEAD
+//=======
         setPaintOrder(Rintangan.class,Polisi.class,Maling.class,Jalanan.class,Countdown.class);
->>>>>>> 2792d4c9660c9044270d058d07739dbedee3d2d0
+//>>>>>>> 2792d4c9660c9044270d058d07739dbedee3d2d0
         character = i;
         j1 = new Jalanan(character);
         j2 = new Jalanan(character);
@@ -71,5 +72,33 @@ public class Game extends World
     {
         Countdown down = new Countdown();
         addObject(down, 400,300);
+    }
+    
+    public void act()
+    {
+        counter++;
+        if(counter==50)
+        {
+            counter=0;
+            int x = 80 + Greenfoot.getRandomNumber(100);
+            int y = 50;
+            int random = Greenfoot.getRandomNumber(9);
+            switch(random)
+            {
+                case 0 : break;
+                case 1 : break;
+                case 2 : break;
+                case 3 : break;
+                case 4 : break;
+                case 5 : break;
+                case 6 : break;
+                case 7 : break;
+                case 8 : break;
+                case 9 : break;
+            }
+            if(random==0)
+               ;
+               // addObject(maling(), x, y);
+        }
     }
 }
