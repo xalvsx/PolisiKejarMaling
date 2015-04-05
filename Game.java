@@ -40,7 +40,7 @@ public class Game extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(800, 600, 1);
-        setPaintOrder(Countdown.class,Peluru.class,Rintangan.class,TambahKecepatan.class,Polisi.class,Maling.class,Jalanan.class);
+        setPaintOrder(Countdown.class,Peluru.class,OrangNyebrang.class,Rintangan.class,TambahKecepatan.class,Polisi.class,Maling.class,Jalanan.class);
         character = i;
         if (i==1) {
             speed = 4;
@@ -143,6 +143,14 @@ public class Game extends World
                 {
                     addObject(new jerigenbensin(speed),x,y);
                 }
+                /*
+                else if(pil == 5)
+                {
+                    addObject(new jalan1(speed),
+                }
+                */
+               
+                
                 ct = 0;
                 
             }

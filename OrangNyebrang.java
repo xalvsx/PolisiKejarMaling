@@ -16,4 +16,12 @@ public class OrangNyebrang extends Actor
     {
         // Add your action code here.
     }    
+    public void cekPosisi() {
+        setLocation(getX(),getY() + speed);
+        
+        if(getY() > 570) {
+            Game game = (Game) getWorld();
+            game.removeObject(this);
+        }
+    }
 }

@@ -12,8 +12,16 @@ public class jalan1 extends OrangNyebrang
      * Act - do whatever the jalan1 wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
+    private int speed= 0;
+    
+    public jalan1(int speed)
+    {
+        this.speed=speed;
+        //getImage().mirrorHorizontally(); //biar balik
+    }
+    
     public void act() 
     {
-        // Add your action code here.
-    }    
+        setLocation(getX()+speed,getY()+speed);
+    }
 }
