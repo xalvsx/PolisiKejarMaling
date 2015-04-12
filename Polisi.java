@@ -111,23 +111,16 @@ public class Polisi extends Actor
                 }
                 if(Greenfoot.isKeyDown("left")) {
                     setLocation(getX()-2,getY());
-                    if(flagbelokkiri==0) turn(-20);
-                    flagbelokkiri=1;
+                    setRotation(-20);
+                    
                 }
                 else if(Greenfoot.isKeyDown("right")) {
                     setLocation(getX()+2,getY());
-                    if(flagbelokkanan==0) turn(20);
-                    flagbelokkanan=1;
+                    setRotation(20);
+                    
                 }
                 else {
-                    if(flagbelokkiri==1) {
-                        turn(20);
-                        flagbelokkiri=0;
-                    }
-                    else if(flagbelokkanan==1) {
-                        turn(-20);
-                        flagbelokkanan=0;
-                    }
+                    setRotation(0);
                 }
             }
             else if(menuMode == 1) {
