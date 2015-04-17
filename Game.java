@@ -26,6 +26,12 @@ public class Game extends World
     
     Polisi polisi;
     Maling maling;
+    Timer timer;
+    TotalPeluru totalpeluru;
+    
+    public void addPeluru(int i) {
+        totalpeluru.addPeluru(i);
+    }
     
     public void setActive() {
         j1.setActive();
@@ -34,6 +40,7 @@ public class Game extends World
         polisi.setActive();
         maling.setActive();
         active = 1;
+        timer.setActive();
     }
     
     public Game(int i)
@@ -80,6 +87,23 @@ public class Game extends World
         addObject(maling, 355, 113);
         maling.setLocation(398, 58);
         polisi.setLocation(401, 555);
+        Tulisan tulisan = new Tulisan(0);
+        addObject(tulisan, 688, 73);
+        tulisan.setLocation(744, 60);
+        Tulisan tulisan2 = new Tulisan(1);
+        addObject(tulisan2, 104, 42);
+        tulisan2.setLocation(157, 60);
+        timer = new Timer();
+        addObject(timer, 144, 118);
+        timer.setLocation(179, 91);
+        totalpeluru = new TotalPeluru();
+        addObject(totalpeluru, 698, 80);
+        totalpeluru.setLocation(791, 94);
+        totalpeluru.setLocation(793, 90);
+    }
+    
+    public void newPeluru(int x, int y) {
+        addObject(new Peluru(speed),x,y);
     }
     
     

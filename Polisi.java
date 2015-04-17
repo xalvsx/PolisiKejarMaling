@@ -39,6 +39,8 @@ public class Polisi extends Actor
     private int peluru = 0;
     private int lagimaju = 0;
     private int lagimundur = 0;
+    private int lagiNembak = 0;
+    private int speed = 0;
     
     private void maju() {
         this.setLocation(this.getX(),this.getY()-1);
@@ -93,6 +95,7 @@ public class Polisi extends Actor
     public void act() 
     {
         if(active==1) {
+            if(lagiNembak > 0) lagiNembak--;
             if(character==0) {
                 counter++;
                 if(counter==8) {
@@ -105,24 +108,42 @@ public class Polisi extends Actor
             }
             
             if(menuMode == 0) {
+                 if(Greenfoot.isKeyDown("space")) {
+                    if(peluru>0 && lagiNembak == 0) {
+                        Game game = (Game) getWorld();
+                        game.newPeluru(getX(), getY()-getImage().getHeight());
+                        game.addPeluru(-1);
+                        peluru--;
+                        lagiNembak = 10;
+                    }
+                }
+                if(Greenfoot.isKeyDown("shift")) {
+                    speed = 3;
+                }
+                else {
+                    speed = 0;
+                }
                 if(getX()<260) {
                     setLocation(getX()+2,getY());
                 }
                 else if(getX()>545) {
                     setLocation(getX()-2,getY());
                 }
-                if(Greenfoot.isKeyDown("left")) {
-                    setLocation(getX()-2,getY());
-                    setRotation(-20);
-                    
-                }
-                else if(Greenfoot.isKeyDown("right")) {
-                    setLocation(getX()+2,getY());
-                    setRotation(20);
-                    
-                }
                 else {
-                    setRotation(0);
+                   
+                    if(Greenfoot.isKeyDown("left")) {
+                        setLocation(getX()-2-speed,getY());
+                        setRotation(-20);
+                        
+                    }
+                    else if(Greenfoot.isKeyDown("right")) {
+                        setLocation(getX()+2+speed,getY());
+                        setRotation(20);
+                        
+                    }
+                    else {
+                        setRotation(0);
+                    }
                 }
             }
             else if(menuMode == 1) {
@@ -161,7 +182,9 @@ public class Polisi extends Actor
     
     public void tambah_peluru()
     {
-        peluru = 3;
+        peluru += 3;
+        Game game = (Game) getWorld();
+        game.addPeluru(3);
     }
 }
 
