@@ -21,11 +21,13 @@ public class Peluru extends Actor
     
     public void cekNabrak()
     {
-        Actor maling;
-        maling = getOneObjectAtOffset(0, 0, Maling.class); // ini harusnya kena maling baru ilang kan pelurunya ? kok ga ilang yah ? //
+        Maling maling;
+        maling = (Maling)getOneObjectAtOffset(0, 0, Maling.class);
         if(maling != null)
         {
-            Game game = (Game) getWorld();
+            maling.tabrak_mundur();
+            
+            Game game = (Game) getWorld(); // nglangin
             game.removeObject(this);
         }
         else cekPosisi();

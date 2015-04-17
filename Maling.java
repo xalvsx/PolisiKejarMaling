@@ -38,6 +38,7 @@ public class Maling extends Actor
     private int active = 0;
     private int langkah = 0;
     private int walking=0;
+    private int lagimundur = 0;
     
     private void maju() {
         this.setLocation(this.getX(),this.getY()-1);
@@ -139,5 +140,17 @@ public class Maling extends Actor
                 menuMode();
             }
         }
-    }    
+        if(lagimundur>0)
+        {
+            if(getY() < 555)
+            {
+                setLocation(getX(),getY()+1);
+            }
+            lagimundur--;
+        }
+    }  
+    public void tabrak_mundur()
+    {
+      lagimundur = 35;
+    }
 }

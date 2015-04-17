@@ -19,14 +19,17 @@ public class Rintangan extends Actor
     }
     
     public void cekNabrak() {
-        Actor polisi;
-        polisi = getOneObjectAtOffset(0, 0, Polisi.class);
+        Polisi polisi;
+        polisi = (Polisi)getOneObjectAtOffset(0, 0, Polisi.class);
         if(polisi != null)
         {
-            Game game = (Game) getWorld();
+            polisi.tabrak_mundur();
+            
+            Game game = (Game) getWorld(); // nglangin
             game.removeObject(this);
         }
         else cekPosisi();
+        
     }
     
     public void cekPosisi() {
