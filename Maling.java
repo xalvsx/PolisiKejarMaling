@@ -90,6 +90,17 @@ public class Maling extends Actor
         }
     }
     
+    public void cekNabrak()
+    {
+        Polisi polisi;
+        polisi = (Polisi)getOneObjectAtOffset(0, 0, Polisi.class);
+        if(polisi != null)
+        {
+            //you win!!
+            Greenfoot.setWorld(new YouWin());
+        }
+    }
+    
     public void act() 
     {
         if(active==1) {
@@ -135,6 +146,9 @@ public class Maling extends Actor
                         flagbelokkanan=0;
                     }
                 }
+                
+                cekNabrak();
+                
             }
             else if (menuMode==1) {
                 menuMode();
