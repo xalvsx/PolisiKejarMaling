@@ -13,6 +13,7 @@ public class Polisi extends Actor
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     private int character = 0;
+    
     public Polisi(int i) {
         character = i%3;
         
@@ -35,6 +36,7 @@ public class Polisi extends Actor
     private int flagbelokkanan = 0;
     private int langkah = 0;
     private int walking = 0;
+    private int peluru = 0;
     
     private void maju() {
         this.setLocation(this.getX(),this.getY()-1);

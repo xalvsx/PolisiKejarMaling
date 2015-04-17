@@ -40,7 +40,7 @@ public class Game extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(800, 600, 1);
-        setPaintOrder(Countdown.class,Peluru.class,Rintangan.class,TambahKecepatan.class,Polisi.class,Maling.class,Jalanan.class);
+        setPaintOrder(Countdown.class,Peluru.class,Rintangan.class,TambahKecepatan.class,Pistol.class,Polisi.class,Maling.class,Jalanan.class);
         character = i;
         if (i==1) {
             speed = 4;
@@ -120,7 +120,7 @@ public class Game extends World
             ct++;
             if(ct == 150)
             {
-                int pil = Greenfoot.getRandomNumber(8);
+                int pil = Greenfoot.getRandomNumber(9);
                 int x = 272 + Greenfoot.getRandomNumber(253);
                 int y = 100;
                 if(pil == 0)
@@ -142,6 +142,10 @@ public class Game extends World
                 else if(pil == 4)
                 {
                     addObject(new jerigenbensin(speed),x,y);
+                }
+                else if(pil == 5)
+                {
+                    addObject(new Pistol(speed),x,y);
                 }
                 ct = 0;
                 
