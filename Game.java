@@ -14,14 +14,9 @@ public class Game extends World
      * 
      */
     private int character = 0;
-<<<<<<< HEAD
     private int counter = 0;
-    
-=======
     private int speed = 2;
->>>>>>> 015e53f69840dfda1a19320e75caef184848a184
     Jalanan j1,j2,j3;
-    private int counter = 0;
     private int awal = 25;
     private int[] range = new int[9];
     private int faktor = 35;
@@ -45,14 +40,11 @@ public class Game extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(800, 600, 1);
-<<<<<<< HEAD
 //<<<<<<< HEAD
 //=======
         setPaintOrder(Rintangan.class,Polisi.class,Maling.class,Jalanan.class,Countdown.class);
 //>>>>>>> 2792d4c9660c9044270d058d07739dbedee3d2d0
-=======
         setPaintOrder(Countdown.class,Peluru.class,Rintangan.class,TambahKecepatan.class,Polisi.class,Maling.class,Jalanan.class);
->>>>>>> 015e53f69840dfda1a19320e75caef184848a184
         character = i;
         if (i==1) {
             speed = 4;
@@ -69,7 +61,7 @@ public class Game extends World
         }
     }
     
-
+    
     public int getCharacterMode() {
         return this.character;
     }
@@ -90,6 +82,8 @@ public class Game extends World
         addObject(maling, 355, 113);
         maling.setLocation(398, 58);
         polisi.setLocation(401, 555);
+        
+        
     }
     
     
@@ -163,7 +157,40 @@ public class Game extends World
                 /* Dekorasi
                  *   buat logika munculin dekorasi disamping jalan secara random disini
                  */
+           
+                int pilih = Greenfoot.getRandomNumber(9);
+                int x_kanan = 697 + Greenfoot.getRandomNumber(19);
+                int y_kiri = 107;
+                if(pilih == 0)
+                {
+                    addObject(new h1(speed), x_kanan, y_kiri);
+    
+                }
+                else if(pilih == 1)
+                {
+                    addObject(new h3(speed), x_kanan, y_kiri);
+                
+                }
+                else if(pilih == 2)
+                {
+                    addObject(new h4(speed), x_kanan, y_kiri);
+                
+                }
+                else if(pilih ==3)
+                {
+                    addObject(new h5(speed), x_kanan, y_kiri);
+                
+                }
+                else if(pilih == 4)
+                {
+                    addObject(new h8(speed), x_kanan, y_kiri);
+                
+                }
+                ct = 0;
+                
             }
+                
+            
             
         }
     }
@@ -174,31 +201,4 @@ public class Game extends World
         addObject(down, 400,300);
     }
     
-    public void act()
-    {
-        counter++;
-        if(counter==50)
-        {
-            counter=0;
-            int x = 80 + Greenfoot.getRandomNumber(100);
-            int y = 50;
-            int random = Greenfoot.getRandomNumber(9);
-            switch(random)
-            {
-                case 0 : break;
-                case 1 : break;
-                case 2 : break;
-                case 3 : break;
-                case 4 : break;
-                case 5 : break;
-                case 6 : break;
-                case 7 : break;
-                case 8 : break;
-                case 9 : break;
-            }
-            if(random==0)
-               ;
-               // addObject(maling(), x, y);
-        }
-    }
 }

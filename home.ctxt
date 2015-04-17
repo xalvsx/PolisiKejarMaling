@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=speed
+comment0.target=void\ setSpeed(int)
+comment1.params=
+comment1.target=void\ setImageSize()
+comment2.params=
+comment2.target=void\ cekNabrak()
+comment3.params=
+comment3.target=void\ cekPosisi()
+comment4.params=
+comment4.target=void\ moveHome()
+comment5.params=
+comment5.target=void\ act()
+numComments=6
