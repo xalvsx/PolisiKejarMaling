@@ -1,23 +1,27 @@
 import greenfoot.*;
 
 /**
- * Write a description of class jalan1 here.
+ * Write a description of class Pistol here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class jalan1 extends OrangNyebrang
+public class Pistol extends Actor
 {
     /**
-     * Act - do whatever the jalan1 wants to do. This method is called whenever
+     * Act - do whatever the Pistol wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    private int speed= 0;
     
-    public jalan1(int speed)
+    protected int speed = 2;
+    
+    public void setSpeed(int speed) {
+        this.speed = speed;
+    }
+    
+    public Pistol(int speed)
     {
-        this.speed=speed;
-        //getImage().mirrorHorizontally(); //biar balik
+        setSpeed(speed);
     }
     
     public void cekNabrak() {
@@ -25,29 +29,25 @@ public class jalan1 extends OrangNyebrang
         polisi = (Polisi)getOneObjectAtOffset(0, 0, Polisi.class);
         if(polisi != null)
         {
-            polisi.tabrak_mundur();
-            
-            Game game = (Game) getWorld(); // nglangin
+            polisi.tambah_peluru();
+            Game game = (Game) getWorld();
             game.removeObject(this);
         }
         else cekPosisi();
-        
     }
     
-    public void cekPosisi() 
-    {
-        setLocation(getX()+speed,getY()+speed);
+    public void cekPosisi() {
+        setLocation(getX(),getY() + speed);
         
-        if(isAtEdge()) {
+        if(getY() > 570) {
             Game game = (Game) getWorld();
             game.removeObject(this);
         }
     }
     
-     
-    
-    public void act()
+    public void act() 
     {
         cekNabrak();
-    }
+        // Add your action code here.
+    }    
 }
