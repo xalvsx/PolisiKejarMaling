@@ -21,6 +21,6 @@ public class h7 extends home
     
     public void act() 
     {
-        // Add your action code here.
+        moveHome();
     }    
 }

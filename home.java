@@ -41,8 +41,12 @@ public class home extends Actor
             game.removeObject(this);
         }
     }
+    
     public void moveHome(){
         this.setLocation(getX(),getY()+this.speed);
+        if(this.getY() > 600){
+            getWorld().removeObject(this);
+        }
     }
     public void act() 
     {
