@@ -25,10 +25,11 @@ public class Pistol extends Actor
     }
     
     public void cekNabrak() {
-        Actor polisi;
-        polisi = getOneObjectAtOffset(0, 0, Polisi.class);
+        Polisi polisi;
+        polisi = (Polisi)getOneObjectAtOffset(0, 0, Polisi.class);
         if(polisi != null)
         {
+            polisi.tambah_peluru();
             Game game = (Game) getWorld();
             game.removeObject(this);
         }

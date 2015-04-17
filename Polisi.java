@@ -37,6 +37,8 @@ public class Polisi extends Actor
     private int langkah = 0;
     private int walking = 0;
     private int peluru = 0;
+    private int lagimaju = 0;
+    private int lagimundur = 0;
     
     private void maju() {
         this.setLocation(this.getX(),this.getY()-1);
@@ -126,7 +128,41 @@ public class Polisi extends Actor
             else if(menuMode == 1) {
                 menuMode();
             }
+            
+            
         }
-    
+        
+        
+        if(lagimaju > 0)
+        {
+             setLocation(getX(),getY()-1);
+             lagimaju--;
+        }
+        
+        if(lagimundur>0)
+        {
+            if(getY() < 555)
+            {
+                setLocation(getX(),getY()+1);
+            }
+            lagimundur--;
+        }
     }    
+    
+    public void tabrak_maju()
+    {
+      lagimaju = 35;
+    }
+    
+    public void tabrak_mundur()
+    {
+      lagimundur = 35;
+    }
+    
+    public void tambah_peluru()
+    {
+        peluru = 3;
+    }
 }
+
+
