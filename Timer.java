@@ -46,7 +46,7 @@ public class Timer extends TextClass
                 setImage(image);
                 counter = 0;
                 if(time==0) {
-                    //Greenfoot.setWorld(new lose());
+                    Greenfoot.setWorld(new YouLose());
                 }
             }
         }

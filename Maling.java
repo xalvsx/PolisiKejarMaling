@@ -97,7 +97,7 @@ public class Maling extends Actor
         if(polisi != null)
         {
             //you win!!
-            //Greenfoot.setWorld(new MenuUtama());
+            Greenfoot.setWorld(new YouWin());
         }
     }
     
