@@ -47,17 +47,17 @@ public class Game extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(800, 600, 1);
-<<<<<<< HEAD
 //<<<<<<< HEAD
+//<<<<<<< HEAD/
 //=======
         setPaintOrder(Rintangan.class,Polisi.class,Maling.class,Jalanan.class,Countdown.class);
 //>>>>>>> 2792d4c9660c9044270d058d07739dbedee3d2d0
         setPaintOrder(Countdown.class,Peluru.class,Rintangan.class,TambahKecepatan.class,Polisi.class,Maling.class,Jalanan.class);
-=======
+//=======
         
         setPaintOrder(Countdown.class,Peluru.class,OrangNyebrang.class,Rintangan.class,TambahKecepatan.class,Pistol.class,Polisi.class,Maling.class,Jalanan.class);
 
->>>>>>> 7a289799bf88c14780cc873b4f652ade5d6e2a9d
+//>>>>>>> 7a289799bf88c14780cc873b4f652ade5d6e2a9d
         character = i;
         if (i==1) {
             speed = 4;
@@ -95,10 +95,10 @@ public class Game extends World
         addObject(maling, 355, 113);
         maling.setLocation(398, 58);
         polisi.setLocation(401, 555);
-<<<<<<< HEAD
+//<<<<<<< HEAD
         
         
-=======
+//=======
         Tulisan tulisan = new Tulisan(0);
         addObject(tulisan, 688, 73);
         tulisan.setLocation(744, 60);
@@ -116,7 +116,7 @@ public class Game extends World
     
     public void newPeluru(int x, int y) {
         addObject(new Peluru(speed),x,y);
->>>>>>> 7a289799bf88c14780cc873b4f652ade5d6e2a9d
+
     }
     
     
@@ -239,7 +239,42 @@ public class Game extends World
                 
             }
                 
-            
+            if(ct == 35) {
+                /* Dekorasi
+                 *   buat logika munculin dekorasi disamping jalan secara random disini
+                 */
+           
+                int pilih = Greenfoot.getRandomNumber(9);
+                int x_kanan = 89 + Greenfoot.getRandomNumber(20);
+                int y_kiri = 107;
+                if(pilih == 0)
+                {
+                    addObject(new h1(speed), x_kanan, y_kiri);
+    
+                }
+                else if(pilih == 1)
+                {
+                    addObject(new h2(speed), x_kanan, y_kiri);
+                
+                }
+                else if(pilih == 2)
+                {
+                    addObject(new h6(speed), x_kanan, y_kiri);
+                
+                }
+                else if(pilih ==3)
+                {
+                    addObject(new h7(speed), x_kanan, y_kiri);
+                
+                }
+                else if(pilih == 4)
+                {
+                    addObject(new h9(speed), x_kanan, y_kiri);
+                
+                }
+                ct = 0;
+                
+            }
             
         }
     }

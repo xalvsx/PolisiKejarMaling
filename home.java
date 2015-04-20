@@ -36,7 +36,7 @@ public class home extends Actor
     public void cekPosisi() {
         setLocation(getX(),getY() + speed);
         
-        if(getY() > 570) {
+        if(getY() > 1200) {
             Game game = (Game) getWorld();
             game.removeObject(this);
         }
@@ -44,7 +44,7 @@ public class home extends Actor
     
     public void moveHome(){
         this.setLocation(getX(),getY()+this.speed);
-        if(this.getY() > 600){
+        if(this.getY() > 1200){
             getWorld().removeObject(this);
         }
     }
