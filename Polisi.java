@@ -13,6 +13,7 @@ public class Polisi extends Actor
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     private int character = 0;
+    
     public Polisi(int i) {
         character = i%3;
         
@@ -35,6 +36,11 @@ public class Polisi extends Actor
     private int flagbelokkanan = 0;
     private int langkah = 0;
     private int walking = 0;
+    private int peluru = 0;
+    private int lagimaju = 0;
+    private int lagimundur = 0;
+    private int lagiNembak = 0;
+    private int speed = 0;
     
     private void maju() {
         this.setLocation(this.getX(),this.getY()-1);
@@ -89,6 +95,7 @@ public class Polisi extends Actor
     public void act() 
     {
         if(active==1) {
+            if(lagiNembak > 0) lagiNembak--;
             if(character==0) {
                 counter++;
                 if(counter==8) {
@@ -101,30 +108,84 @@ public class Polisi extends Actor
             }
             
             if(menuMode == 0) {
+                 if(Greenfoot.isKeyDown("space")) {
+                    if(peluru>0 && lagiNembak == 0) {
+                        Game game = (Game) getWorld();
+                        game.newPeluru(getX(), getY()-getImage().getHeight());
+                        game.addPeluru(-1);
+                        peluru--;
+                        lagiNembak = 10;
+                    }
+                }
+                if(Greenfoot.isKeyDown("shift")) {
+                    speed = 3;
+                }
+                else {
+                    speed = 0;
+                }
                 if(getX()<260) {
                     setLocation(getX()+2,getY());
                 }
                 else if(getX()>545) {
                     setLocation(getX()-2,getY());
                 }
-                if(Greenfoot.isKeyDown("left")) {
-                    setLocation(getX()-2,getY());
-                    setRotation(-20);
-                    
-                }
-                else if(Greenfoot.isKeyDown("right")) {
-                    setLocation(getX()+2,getY());
-                    setRotation(20);
-                    
-                }
                 else {
-                    setRotation(0);
+                   
+                    if(Greenfoot.isKeyDown("left")) {
+                        setLocation(getX()-2-speed,getY());
+                        setRotation(-20);
+                        
+                    }
+                    else if(Greenfoot.isKeyDown("right")) {
+                        setLocation(getX()+2+speed,getY());
+                        setRotation(20);
+                        
+                    }
+                    else {
+                        setRotation(0);
+                    }
                 }
             }
             else if(menuMode == 1) {
                 menuMode();
             }
+            
+            
         }
-    
+        
+        
+        if(lagimaju > 0)
+        {
+             setLocation(getX(),getY()-1);
+             lagimaju--;
+        }
+        
+        if(lagimundur>0)
+        {
+            if(getY() < 555)
+            {
+                setLocation(getX(),getY()+1);
+            }
+            lagimundur--;
+        }
     }    
+    
+    public void tabrak_maju()
+    {
+      lagimaju = 35;
+    }
+    
+    public void tabrak_mundur()
+    {
+      lagimundur = 35;
+    }
+    
+    public void tambah_peluru()
+    {
+        peluru += 3;
+        Game game = (Game) getWorld();
+        game.addPeluru(3);
+    }
 }
+
+

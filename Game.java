@@ -26,6 +26,12 @@ public class Game extends World
     
     Polisi polisi;
     Maling maling;
+    Timer timer;
+    TotalPeluru totalpeluru;
+    
+    public void addPeluru(int i) {
+        totalpeluru.addPeluru(i);
+    }
     
     public void setActive() {
         j1.setActive();
@@ -34,17 +40,24 @@ public class Game extends World
         polisi.setActive();
         maling.setActive();
         active = 1;
+        timer.setActive();
     }
     
     public Game(int i)
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(800, 600, 1);
+<<<<<<< HEAD
 //<<<<<<< HEAD
 //=======
         setPaintOrder(Rintangan.class,Polisi.class,Maling.class,Jalanan.class,Countdown.class);
 //>>>>>>> 2792d4c9660c9044270d058d07739dbedee3d2d0
         setPaintOrder(Countdown.class,Peluru.class,Rintangan.class,TambahKecepatan.class,Polisi.class,Maling.class,Jalanan.class);
+=======
+        
+        setPaintOrder(Countdown.class,Peluru.class,OrangNyebrang.class,Rintangan.class,TambahKecepatan.class,Pistol.class,Polisi.class,Maling.class,Jalanan.class);
+
+>>>>>>> 7a289799bf88c14780cc873b4f652ade5d6e2a9d
         character = i;
         if (i==1) {
             speed = 4;
@@ -82,8 +95,28 @@ public class Game extends World
         addObject(maling, 355, 113);
         maling.setLocation(398, 58);
         polisi.setLocation(401, 555);
+<<<<<<< HEAD
         
         
+=======
+        Tulisan tulisan = new Tulisan(0);
+        addObject(tulisan, 688, 73);
+        tulisan.setLocation(744, 60);
+        Tulisan tulisan2 = new Tulisan(1);
+        addObject(tulisan2, 104, 42);
+        tulisan2.setLocation(157, 60);
+        timer = new Timer();
+        addObject(timer, 144, 118);
+        timer.setLocation(179, 91);
+        totalpeluru = new TotalPeluru();
+        addObject(totalpeluru, 698, 80);
+        totalpeluru.setLocation(791, 94);
+        totalpeluru.setLocation(793, 90);
+    }
+    
+    public void newPeluru(int x, int y) {
+        addObject(new Peluru(speed),x,y);
+>>>>>>> 7a289799bf88c14780cc873b4f652ade5d6e2a9d
     }
     
     
@@ -126,7 +159,7 @@ public class Game extends World
             ct++;
             if(ct == 150)
             {
-                int pil = Greenfoot.getRandomNumber(8);
+                int pil = Greenfoot.getRandomNumber(10);
                 int x = 272 + Greenfoot.getRandomNumber(253);
                 int y = 100;
                 if(pil == 0)
@@ -149,6 +182,22 @@ public class Game extends World
                 {
                     addObject(new jerigenbensin(speed),x,y);
                 }
+                else if(pil == 5)
+                {
+                    addObject(new Pistol(speed),x,y);
+                }
+                else if(pil == 6)
+                {
+                    addObject(new jalan1(speed),212,96);
+                }
+                /*
+                else if(pil == 5)
+                {
+                    addObject(new jalan1(speed),
+                }
+                */
+               
+                
                 ct = 0;
                 
             }

@@ -20,11 +20,13 @@ public class TambahKecepatan extends Actor
     }
     
     public void cekNabrak() {
-        Actor polisi;
-        polisi = getOneObjectAtOffset(0, 0, Polisi.class);
+        Polisi polisi;
+        polisi = (Polisi)getOneObjectAtOffset(0, 0, Polisi.class);
         if(polisi != null)
         {
-            Game game = (Game) getWorld();
+            polisi.tabrak_maju();
+            
+            Game game = (Game) getWorld(); // nglangin
             game.removeObject(this);
         }
         else cekPosisi();
