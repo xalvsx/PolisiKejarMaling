@@ -16,5 +16,8 @@ public class TombolHowtoPLay extends TombolMenuUtama
     {
         // Add your action code here.
         TombolHover();
+        if(Greenfoot.mouseClicked(this)) {
+            Greenfoot.setWorld(new HowToPlay());
+        }
     }    
 }

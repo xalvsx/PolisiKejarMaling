@@ -81,5 +81,9 @@ public class MenuUtama extends World
         maling2.setLocation(222, 139);
         Maling maling3 = new Maling(5);
         addObject(maling3, 327, 145);
+        Logo logo = new Logo();
+        addObject(logo, 618, 74);
+        logo.setLocation(616, 70);
+        logo.setLocation(617, 72);
     }
 }

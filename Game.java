@@ -23,6 +23,7 @@ public class Game extends World
     private int active = 0;
     private Countdown down;
     int ct = 0;
+    int batas = 150;
     
     Polisi polisi;
     Maling maling;
@@ -157,8 +158,9 @@ public class Game extends World
              */
             
             ct++;
-            if(ct == 150)
+            if(ct == batas)
             {
+                batas = Greenfoot.getRandomNumber(100) + 76;
                 int pil = Greenfoot.getRandomNumber(10);
                 int x = 272 + Greenfoot.getRandomNumber(253);
                 int y = 100;
@@ -176,11 +178,17 @@ public class Game extends World
                 }
                 else if(pil ==3)
                 {
-                    addObject(new botolminum(speed),x,y);
+                    if(character == 0)
+                        addObject(new botolminum(speed),x,y);
+                    else 
+                        addObject(new jerigenbensin(speed),x,y);
                 }
                 else if(pil == 4)
                 {
-                    addObject(new jerigenbensin(speed),x,y);
+                    if(character == 0)
+                        addObject(new botolminum(speed),x,y);
+                    else 
+                        addObject(new jerigenbensin(speed),x,y);;
                 }
                 else if(pil == 5)
                 {

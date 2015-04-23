@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=rotation\ x\ y
+comment0.target=GambarPanah(int,\ int,\ int)
+comment1.params=
+comment1.target=void\ act()
+numComments=2
